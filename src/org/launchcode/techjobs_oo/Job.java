@@ -102,7 +102,7 @@ public class Job {
         if (getName() == "" || getName() == null) {
             name = "Data not available";
         }
-         employer = getEmployer();
+
 
         if (employer.getValue() == "" || employer.getValue() == null) {
             employer.setValue("Data not available");
@@ -117,7 +117,7 @@ public class Job {
             coreCompetency.setValue("Data not available");
         }
 
-        return "Id:" + getId() + "\n Name:" + name + "\n Employer:" + employer + "\n Location:" + location  + "\n Position Type:" + positionType +"\n Core Competency" + coreCompetency;
+        return "\n Id:" + getId() + "\n Name: " + name + "\n Employer: " + employer + "\n Location: " + location  + "\n Position Type: " + positionType +"\n Core Competency: " + coreCompetency;
 
     }
 }
