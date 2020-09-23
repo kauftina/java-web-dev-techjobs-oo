@@ -57,7 +57,7 @@ public class JobTest {
         assertTrue(job3.getCoreCompetency().getValue()=="Persistence");
     }
     public void testIfFieldIsEmptyThenDataNotAvail() {
-        assertNull(job3.getEmployer().getValue()==null);
+        assertNotNull(job3.getEmployer().getValue()==null);
     }
 
 }
